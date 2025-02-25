@@ -11,6 +11,6 @@ app.autodiscover_tasks()
 app.conf.beat_schedule = {
     'update_crypto_prices_every_5_min': {
         'task': 'crypto_org.tasks.update_crypto_prices',
-        'schedule': crontab(minute='*/1'), 
+        'schedule': crontab(minute='*/5'), 
     },
 }
